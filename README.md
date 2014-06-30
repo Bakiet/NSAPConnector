@@ -33,7 +33,7 @@ Install-Package NSAPConnector_x64
 
 * Get a DataSet populated with all the returned result tables
 
-```
+```csharp
            DataSet resultDataSet;
 
             using (var connection = new SapConnection("DEV"))
@@ -50,7 +50,7 @@ Install-Package NSAPConnector_x64
 
 * Get a DataReader which gather data from the specified returned result table
 
-```
+```csharp
            SapDataReader sapDataReader;
 
             using (var connection = new SapConnection("DEV"))
@@ -72,7 +72,7 @@ Install-Package NSAPConnector_x64
 
 * Use transactions
 
-```
+```csharp
            
             using (var connection = new SapConnection("DEV"))
             {
@@ -103,7 +103,7 @@ Install-Package NSAPConnector_x64
 
 * Use sessions for statefull calls
 
-```
+```csharp
            
             using (var connection = new SapConnection("DEV"))
             {
